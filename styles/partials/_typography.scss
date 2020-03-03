@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Spartan&display=swap');
+
+$heading_primary_font: 'Roboto', Spartan;
+
+$heading_secondary_font: 'Spartan', cursive;
+
+$heading_tertiary_font: 'Roboto', sans-serif;
+
+h1 {
+    @include font_type($heading_primary_font, white, 25px);
+
+}
+
+h2 {
+    @include font_type($heading_secondary_font, olive, 18px);
+
+}
+
+h3 {
+    @include font_type($heading_tertiary_font, white, 10px);
+
+}

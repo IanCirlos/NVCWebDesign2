@@ -1,0 +1,41 @@
+@mixin font_type($family, $color, $size) {
+    font-family: $family;
+    color: $color;
+    font-size: $size;
+}
+
+
+
+@mixin round-border($radius, $padding) {
+    border: 1px solid #414141;
+    border-radius: 10px;
+    padding: 10px;
+}
+@mixin main-button($color) {
+    background-color: $primary-button-color;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.btn {
+    @include main-button($secodary-color);
+    &:hover,
+    &:focus {
+        background-color: lighten($primary-button-color, 10%);
+        cursor: pointer;
+    }
+}

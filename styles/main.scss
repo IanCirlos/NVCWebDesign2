@@ -1,0 +1,71 @@
+@import "./vendor/normalize";
+@import './partials/colors';
+@import './partials/mixins';
+@import ',/partials/typography';
+
+.graphic {
+  height: 40vh;
+  background-image: url(../assets/images/Glowing Effect.jpg);
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: 91%;
+  text-align: center;
+  padding-top: 50px;
+
+  h2, h1 {
+    margin: 0;
+  }
+  h3 {
+    text-transform: uppercase;
+    margin-top: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+  padding: 2em;
+}
+
+.container {
+  h1 {
+    color: $primary-color;
+    background-color: blue($color: #000000);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1024px) {
+    .container {
+      background-color: navy;
+    }
+  }
